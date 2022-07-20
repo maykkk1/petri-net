@@ -68,8 +68,8 @@ class MontagemDeCarros:
         sequenciaDeTransicoes = self.getListaDeTransicoesOrdenadas()
         cont = 0
         while(True):
-            for i, transiocoes in enumerate(sequenciaDeTransicoes):
-                transicaoAtual = sequenciaDeTransicoes[i]
+            for transicoes in sequenciaDeTransicoes:
+                transicaoAtual = transicoes
                 transicaoAtual.validarTransicao(self.getArcos())
             #Conta a quantidade de condicoes que nao podem mais ser ativadas
             for transicao in sequenciaDeTransicoes:
